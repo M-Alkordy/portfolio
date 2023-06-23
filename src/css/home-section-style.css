@@ -1,0 +1,126 @@
+.home-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 116px;
+}
+
+.home-section::before {
+    content: "";
+    background-image: url(/imgs/background-3.png);
+    background-position: center;
+    background-size: cover;
+    inset: 0;
+    position: absolute;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.home-section .home-logo-img {
+    display: none;
+}
+
+.home-section .home-h1 {
+    font-weight: var(--fw-bold);
+    color: var(--clr-primary);
+    font-size: 45px;
+    margin-top: 158px;
+    margin-bottom: 39px;
+}
+
+.home-section .home-h3 {
+    font-weight: var(--fw-base);
+    color: var(--clr-primary);
+    font-size: 30px;
+    margin-bottom: 75px;
+}
+
+.home-section .home-line {
+    content: "";
+    width: 55%;
+    min-width: 250px;
+    max-width: 90%;
+    border-bottom: 7px solid var(--clr-accent);
+    border-radius: var(--br-normal);
+    margin-bottom: 39px;
+}
+
+.home-section .home-social {
+    position: absolute;
+    left: 49px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.home-section .home-social .home-social-a {
+    margin-bottom: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+}
+
+.home-section .home-p {
+    font-weight: var(--fw-light);
+    color: var(--clr-primary);
+    font-size: 20px;
+    margin-bottom: 51px;
+}
+
+.home-section .home-scroll-img {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .home-section::before {
+        background-image: url(../imgs/background-1.png);
+        opacity: 0.2;
+    }
+
+    .home-section .home-logo-img {
+        display: block;
+        margin-top: 77px;
+    }
+
+    .home-section .home-h1 {
+        margin-bottom: 14px;
+        margin-top: 35px;
+        font-size: 24px;
+    }
+
+    .home-section .home-h3 {
+        font-size: 16px;
+        margin-bottom: 26px;
+    }
+
+    .home-section .home-line {
+        margin-bottom: 90px;
+        width: 70%;
+        border-bottom: 3px solid var(--clr-accent);
+    }
+
+    .home-section .home-social {
+        position: initial;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 19px;
+        margin-bottom: 91px;
+        padding-top: 0;
+    }
+
+    .home-section .home-social .home-social-a {
+        margin-bottom: 0;
+    }
+
+    .home-section .home-p {
+        display: none;
+    }
+
+    
+}

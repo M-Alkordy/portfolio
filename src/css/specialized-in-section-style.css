@@ -1,0 +1,58 @@
+.specialized-in-section .main-heading::before {
+  content: "+3";
+}
+
+.specialized-in-section .swiper-slide .fq-card {
+  background-color: var(--clr-neutral-100-low-opacity);
+  position: relative;
+  padding: 22px 32px;
+  width: 350px;
+  height: 270px;
+  margin: auto;
+}
+
+.specialized-in-section .swiper-slide .fq-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 95px;
+  background-color: var(--clr-accent);
+}
+
+.specialized-in-section .swiper-slide .fq-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 173px;
+  height: 5px;
+  background-color: var(--clr-accent);
+}
+
+.specialized-in-section .swiper-slide .fq-card .fq-title {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.specialized-in-section .bottom-row {
+  width: 100%;
+  height: 50px;
+  margin-top: 30px;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .specialized-in-section .swiper-slide .fq-card {
+    height: 200px;
+  }
+
+  .specialized-in-section .swiper-slide .fq-card .fq-title {
+    font-size: 20px; 
+  }
+
+  .specialized-in-section .swiper-slide .fq-card .fq-descrip {
+    font-size: 14px; 
+  }
+}

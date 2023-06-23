@@ -1,0 +1,200 @@
+.bh-talk-section {
+    background-image: url(/imgs/yellow-logo.png); 
+    background-position: center;
+    background-size: min(600px, 70%);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bh-talk-section .main-heading::before {
+    content: "+Let's collaborate";
+}
+
+.bh-talk-section .contact-box {
+    padding: 0 20px;
+    width: 100%;
+}
+
+.bh-talk-section .contact-box form {
+    max-width: 900px;
+    margin: auto;
+}
+
+.bh-talk-section .contact-box .input-box,
+.bh-talk-section .contact-box .message-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.bh-talk-section .contact-box .input-box input {
+    background-color: transparent;
+    border: transparent;
+    border-bottom: 1px solid var(--clr-accent);
+    padding-bottom: 4px;
+    font-size: 14px;
+    color: var(--clr-primary);
+    width: 300px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.bh-talk-section .contact-box .input-box input::placeholder {
+    font-weight: var(--fw-semibold);
+}
+
+.bh-talk-section .contact-box .your-info {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.bh-talk-section .contact-box .message-box {
+    background: linear-gradient(102deg, var(--clr-primary-low-opacity), var(--clr-accent-content-low-opacity));
+    border: 1px solid var(--clr-accent);
+}
+
+.bh-talk-section .contact-box .message-box h6 {
+    margin-top: 51px;
+    margin-bottom: 38px;
+    font-weight: var(--fw-semibold);
+    font-size: 32px;
+    opacity: 0.5;
+    text-align: center;
+}
+
+.bh-talk-section .contact-box .message-box textarea {
+    width: 70%;
+    min-width: 500px;
+    font-size: 16px;
+    margin: auto;
+    resize: none;
+    height: 225px;
+    background-color: transparent;
+    padding: 10px 20px;
+    color: var(--clr-primary);
+    border: none;
+}
+
+.bh-talk-section .contact-box .message-box textarea::placeholder {
+    text-align: center;
+}
+
+.bh-talk-section .contact-box .input-box input:focus,
+.bh-talk-section .contact-box .message-box textarea {
+    outline: none;
+    border-color: var(--clr-primary);
+}
+
+.bh-talk-section .contact-box .message-box:has(textarea:focus) {
+    border-color: var(--clr-primary);
+}
+
+.bh-talk-section .contact-box .message-box:has(textarea:focus) h6 {
+    opacity: 1;
+}
+
+.bh-talk-section .contact-box .bottom-row-lets-talk {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 80px;
+    justify-content: space-between;
+}
+
+.bh-talk-section .contact-box .submit-btn {
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 22px;
+    width: 160px;
+    padding: 10px 0px;
+    font-weight: var(--fw-bold);
+    background-color: var(--clr-accent);
+    color: var(--clr-accent-content);
+    border: none;
+}
+
+.bh-talk-section  ul.social-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.bh-talk-section ul.social-list > li.list-item:not(:first-child) {
+    width: 32px;
+    height: 32px;
+}
+
+.bh-talk-section ul.social-list > li.list-item:not(:first-child) > a {
+    margin-bottom: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+}
+
+.bh-talk-section ul.social-list > li:first-child {
+    font-size: 24px;
+}
+
+.bh-talk-section  ul.social-list .list-item-para {
+    border-right: 1px solid var(--clr-primary);
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .bh-talk-section .subtitle1 {
+        font-size: 12px;
+    }
+
+    .bh-talk-section .title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .bh-talk-section .contact-box .input-box label {
+        font-size: 12px;
+        padding-bottom: 0;
+        text-align: left;
+        opacity: 0.5;
+    }
+
+    .bh-talk-section .contact-box .input-box input {
+        width: 200px;
+    }
+
+    .bh-talk-section .contact-box .message-box h6 {
+        font-size: 20px;
+    }
+
+    .bh-talk-section .contact-box .message-box textarea {
+        width: 100%;
+        min-width: 0;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 520px) {
+    .bh-talk-section .contact-box .your-info {
+        flex-direction: column;
+    }
+    .bh-talk-section .contact-box .input-box input {
+        width: 100%;
+    }
+
+    ul.social-list li:first-child {
+        display: none;
+    }
+
+    ul.social-list {
+        width: 100%;
+    }
+}

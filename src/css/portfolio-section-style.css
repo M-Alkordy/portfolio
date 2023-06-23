@@ -1,0 +1,122 @@
+.port-sec {
+  overflow: hidden;
+}
+
+.port-sec .main-heading::before {
+  content: "+40";
+}
+
+.port-sec .port-redu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  row-gap: 20px;
+}
+
+.port-sec .port-redu .redu {
+  margin: 0 30px;
+  cursor: pointer;
+  text-transform: capitalize;
+  opacity: 70%;
+  transition: .3s;
+  text-align: start;
+  position: relative;
+}
+
+.port-sec .port-redu .redu:hover {
+  opacity: 100%;
+}
+
+.port-sec .port-redu .redu.active {
+  opacity: 100%;
+}
+
+.port-sec .port-redu .redu::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 0;
+  background-color: var(--clr-accent);
+  bottom: -5px;
+  left: 0;
+  transition: .3s;
+}
+
+.port-sec .port-redu .redu.active::after {
+  position: absolute;
+  content: "";
+  width: 80%;
+  height: 2px;
+  background-color: var(--clr-accent);
+  bottom: -5px;
+  left: 0;
+}
+
+.port-sec .swiper {
+  margin-top: 85px;
+}
+
+.port-sec .swiper-slide {
+  font-size: 18px;
+}
+
+.port-sec .port-c-cont {
+  max-width: 400px !important;
+  margin: auto;
+}
+
+.port-sec .swiper-slide img {
+  display: block;
+  width: 400px;
+  max-height: 210px;
+}
+
+.port-sec .port-card-text {
+  background-color: var(--clr-neutral-300);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  padding: 16px;
+}
+
+.port-sec .port-card-text a {
+  font-weight: 300;
+  font-size: 16px;
+  color: var(--clr-accent);
+}
+
+@media(max-width: 768px) {
+  .port-sec .swiper-slide {
+    font-size: 14px;
+  }
+
+  .port-sec .port-redu .redu {
+    font-size: 12px;
+  }
+
+  .port-sec .swiper {
+    margin-top: 35px;
+  }
+}
+
+@media (max-width: 520px) {
+  .port-sec .port-redu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .port-sec .port-redu .redu {
+    white-space: nowrap;
+  }
+}
+
+.portfolio-contanier {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}

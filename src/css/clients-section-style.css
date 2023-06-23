@@ -1,0 +1,17 @@
+.clients-section {
+    padding-top: 80px;
+}
+
+.clients-section .main-heading::before {
+    content: "+50";
+}
+
+.clients-section .clients-swiper .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clients-section .clients-swiper .swiper-slide img {
+    width: 150px;
+}

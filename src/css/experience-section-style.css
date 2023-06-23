@@ -1,0 +1,71 @@
+.experience-section .main-heading::before {
+    content: "+10 Years";
+}
+
+.experience-section .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 40px;
+}
+
+.experience-section .card .exp-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    line-height: 22px;
+    position: relative;
+}
+
+.experience-section .card .exp-title::after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--clr-accent);
+}
+
+.experience-section .card .exp-title h3 {
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.experience-section .card .exp-title p {
+    font-size: 22px;
+}
+
+.experience-section .card .exp-info p {
+    font-weight: var(--fw-light);
+    line-height: 22px;
+}
+
+.experience-section .card .exp-info span {
+    color: var(--clr-accent);
+    text-decoration: underline;
+    font-weight: var(--fw-base);
+    line-height: 19.36px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+@media(max-width:768px) {
+    .experience-section .main-heading::before {
+        content: "+10";
+    }
+
+    .experience-section .container {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    .experience-section .card .exp-title h3 {
+        font-size: 20px;
+    }
+
+    .experience-section .card .exp-title p {
+        font-size: 16px;
+    }
+
+    .experience-section .card .exp-info p {
+        font-size: 13px;
+    }
+}
